@@ -1,181 +1,353 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)https://zrrskywalker.github.io/ -->
-<html>
-
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <meta content="IE=5.0000" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Aojun Zhou&#39;s home page">
-
-  <link href="./assets/wfdoc.css" rel="stylesheet" type="text/css">
-  <title>Aojun Zhou's Homepage</title>
-  <meta name="GENERATOR" content="MSHTML 11.00.10570.1001">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aojun Zhou - Home Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+        }
+        h3 {
+            font-size: 1.4em;
+            border-bottom: none;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .publication-list li {
+            margin-bottom: 15px;
+        }
+        .publication-list .citation-count {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+        .award-list li {
+            margin-bottom: 8px;
+        }
+        .referee-info {
+            margin-bottom: 15px;
+        }
+        .referee-info p {
+            margin: 5px 0;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 5px;
+        }
+        strong {
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                margin: 10px auto;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
 </head>
-
-
 <body>
-  <div id="layout-content" style="margin-top: 25px;">
-    <table>
-      <tbody>
-        <tr>
-          <td width="670">
-            <div id="toptitle">
-              <h1>Aojun Zhou</h1>
+    <div class="container">
+        <h1>Aojun Zhou</h1>
+        <div class="contact-info">
+            <p>PhD in EE, The Chinese University of Hong Kong</p>
+            <p>15501266505 | <a href="mailto:aojunzhou@gmail.com">aojunzhou@gmail.com</a> | <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank">Google Scholar</a> (7,600+ citations, 10,000+ stars)</p>
+        </div>
+
+        <section>
+            <h2>Biography</h2>
+            <p>I obtained my Ph.D. degree from Electronic Engineering and Multimedia Lab (MMLab) of The Chinese University of Hong Kong (CUHK) in 2025, supervised by Prof. Xiaogang Wang and Prof. Hongsheng Li. My research primarily focuses on two fundamental challenges in the field of large models (e.g., Large Language Models): Reasoning and Efficiency. Specifically, My contributions span both areas:</p>
+
+            <h3>Algorithm-Hardware Co-Design for Efficient AI System:</h3>
+            <p>Scaling laws in AI have driven rapid model growth, creating challenges in training, deployment, and energy efficiency. I addressed these through parameter sparsification and low-precision techniques, inventing the power-of-two format [ICLR 2017] and the general N:M sparsity pattern [ICLR 2021], alongside efficient training methods like SR-STE [ICLR 2021]. These innovations are widely applied in large language and diffusion models, with successful hardware integration (e.g., Intel Arria, Movidius). Notably, my N:M sparsity model deployment on FPGA, published in IEEE VLSI, won the 2025 Best Paper Award, the first-ever for China, including HK and Macau.</p>
+
+            <h3>Reasoning in (Multimodal) Large Language Models:</h3>
+            <p>Reasoning, whether for humans or machines, is a hallmark of intelligence. Starting from the domain of mathematical reasoning, I proposed a reasoning paradigm based on interleaved text and code [ICLR 2024], which, compared to Chain-of-Thought (CoT), significantly elevated mathematical reasoning to the level of competition participants for the first time. This paradigm has become a standard in both open-source communities and proprietary models. Additionally, I developed a multimodal reasoning benchmark, MathVision [NeurIPS 2024], which has become the standard for evaluating the reasoning capabilities of nearly all mainstream multimodal AI models (e.g., Qwen-VL, Intern-VL, Seed-VL, etc.).</p>
+            <p>I believe that studying the efficiency and reasoning of large models is a valuable strategy for improving AI’s capabilities, sustainability, and societal resilience.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>PhD: Electronic Engineering, The Chinese University of Hong Kong</strong> Aug.2022-Oct.2025
+                    <br>Advisor: Prof. Xiaogang Wang and Prof. Hongsheng Li
+                    <br>Topics: Advancing Reasoning and Efficiency in (Multi-modality) Large Language Models.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Selected Publications</h2>
+            <p class="note">Dr. Aojun Zhou has co-authored over 30 papers in top-tier machine learning, computer vision venues (NeurIPS, ICML, ICLR, CVPR, ICCV, TPAMI, ACL, TVLSI, TCAD, DATE). As of 08/2025 his works have been cited over 7,600 times, with h-index = 30 (i10-index = 39). Below are his selected publications: ‡ denotes the author is his mentee; * indicates an equal contribution.</p>
+            <ul class="publication-list">
+                <li><strong>Incremental Network Quantization: Towards Lossless CNNs with Low-precision Weights.</strong>
+                    <br>Aojun Zhou, Anbang Yao, Yiwen Guo, Lin Xu, Yurong Chen.
+                    <br>International Conference on Learning Representations, ICLR, 2017. <span class="citation-count">1421 citations</span>
+                </li>
+                <li><strong>Learning N:M Fine-grained Structured Sparse Neural Networks From Scratch.</strong>
+                    <br>Aojun Zhou, Yukun Ma, Junnan Zhu, Jianbo Liu, Zhijie Zhang, Kun Yuan, Wenxiu Sun, Hongsheng Li.
+                    <br>International Conference on Learning Representations, ICLR, 2021. <span class="citation-count">316 citations</span>
+                </li>
+                <li><strong>An algorithm–hardware co-optimized framework for accelerating N:M sparse transformers</strong>
+                    <br>Chao Fang‡, Aojun Zhou, Zhongfeng Wang.
+                    <br>IEEE Transactions on Very Large Scale Integration (VLSI) Systems, TVLSI, 2022.
+                    <br><em>Best Paper Award, Led Algorithm Development, the first one in China.</em>
+                </li>
+                <li><strong>Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification.</strong>
+                    <br>Aojun Zhou, Ke Wang, Zimu Lu, Weikang Shi, Sichun Luo, Zipeng Qin, Shaoqing Lu, Anya Jia, Linqi Song, Mingjie Zhan, Hongsheng Li.
+                    <br>International Conference on Learning Representations, ICLR, 2024. <span class="citation-count">195 citations</span>
+                </li>
+                <li><strong>Explicit Loss-error-aware Quantization for Low-bit Deep Neural Networks.</strong>
+                    <br>Aojun Zhou, Anbang Yao, Kuan Wang, Yurong Chen.
+                    <br>Computer Vision and Pattern Recognition Conference, CVPR, 2018. <span class="citation-count">114 citations</span>
+                </li>
+                <li><strong>Efficient N: M Sparse DNN Training Using Algorithm, Architecture, and Dataflow Co-Design</strong>
+                    <br>Chao Fang‡, Wei Sun, Aojun Zhou, Zhongfeng Wang.
+                    <br>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, TCAD, 2023.
+                </li>
+                <li><strong>SparseMAE: Sparse Training Meets Masked Autoencoders.</strong>
+                    <br>Aojun Zhou, Yang Li, Zipeng Qin, Jianbo Liu, Junting Pan, Renrui Zhang Rui Zhao, Peng Gao, Hongsheng Li.
+                    <br>International Conference on Computer Vision, ICCV, 2023.
+                </li>
+                <li><strong>HBONet: Harmonious Bottleneck on Two Orthogonal Dimensions</strong>
+                    <br>Aojun Zhou*, Duo Li, Anbang Yao.
+                    <br>International Conference on Computer Vision, ICCV, 2019.
+                </li>
+                <li><strong>MathCoder2: Better Math Reasoning from Continued Pretraining on Model-translated Mathematical Code</strong>
+                    <br>Zimu Lu‡, Aojun Zhou*, Ke Wang, Houxing Ren, Weikang Shi, Junting Pan, Mingjie Zhan, Hongsheng Li.
+                    <br>International Conference on Learning Representations, ICLR, 2025 Spotlight.
+                </li>
+                <li><strong>MathCoder: Seamless Code Integration in LLMs for Enhanced Mathematical Reasoning.</strong>
+                    <br>Ke Wang‡, Houxing Ren‡, Aojun Zhou*, Zimu Lu, Sichun Luo, Weikang Shi, Renrui Zhang, Linqi Song, Mingjie Zhan, Hongsheng Li.
+                    <br>International Conference on Learning Representations, ICLR, 2024. <span class="citation-count">132 citations</span>
+                </li>
+                <li><strong>LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention.</strong>
+                    <br>Renrui Zhang, Jiaming Han, Aojun Zhou, Xiangfei Hu, Shilin Yan, Pan Lu, Hongsheng Li, Peng Gao, Yu Qiao.
+                    <br>International Conference on Learning Representations, ICLR, 2024. <span class="citation-count">1083 citations</span>
+                </li>
+                <li><strong>Omni-Dimensional Dynamic Convolution</strong>
+                    <br>Chao Li, Aojun Zhou, Anbang Yao
+                    <br>International Conference on Computer Vision, ICLR, 2022 Spotlight. <span class="citation-count">521 citations</span>
+                </li>
+                <li><strong>MathGenie: Generating Synthetic Data with Question Back-translation for Enhancing Mathematical Reasoning of LLMs.</strong>
+                    <br>Zimu Lu‡, Aojun Zhou*, Houxing Ren, Ke Wang, Weikang Shi, Junting Pan, Mingjie Zhan, Hongsheng Li.
+                    <br>Association for Computational Linguistics, Main Conference, ACL, 2024.
+                </li>
+                <li><strong>SPP: Sparsity-Preserved Parameter-Efficient Fine-Tuning for Large Language Models.</strong>
+                    <br>Xudong Lu‡, Aojun Zhou*, Yuhui Xu, Renrui Zhang, Peng Gao, Hongsheng Li.
+                    <br>International Conference on Machine Learning, ICML, 2024.
+                </li>
+                <li><strong>DominoSearch: Find layer-wise fine-grained N: M sparse schemes from dense neural networks.</strong>
+                    <br>Wei Sun‡, Aojun Zhou*, Sander Stuijk, Rob G. J. Wijnhoven, Andrew Nelson, Hongsheng Li, Henk Corporaal.
+                    <br>Neural Information Processing Systems, NeurIPS, 2021.
+                </li>
+                <li><strong>Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset</strong>
+                    <br>Ke Wang‡, Junting Pan, Weikang Shi, Zimu Lu, Houxing Ren, Aojun Zhou, Mingjie Zhan, Hongsheng Li.
+                    <br>Neural Information Processing Systems, NeurIPS, 2024. <span class="citation-count">222 citations</span>
+                </li>
+                <li><strong>BlueLM-V-3B: Algorithm and System Co-Design for Multimodal Large Language Models on Mobile Devices</strong>
+                    <br>Xudong Lu‡, Yinghao Chen, Cheng Chen, Hui Tan, Boheng Chen, Yina Xie, Rui Hu, Guanxin Tan, Renshou Wu, Yan Hu, Yi Zeng, Lei Wu, Liuyang Bian, Zhaoxiong Wang, Long Liu, Yanzhou Yang, Han Xiao, Aojun Zhou, Yafei Wen, Xiaoxin Chen, Shuai Ren, Hongsheng Li.
+                    <br>CVPR 2025.
+                </li>
+                <li><strong>Incorporating convolution designs into visual transformers</strong>
+                    <br>Kun Yuan, Shaopeng Guo, Ziwei Liu, Aojun Zhou, Fengwei Yu, Wei Wu.
+                    <br>International Conference on Computer Vision, ICCV, 2021. <span class="citation-count">710 citations</span>
+                </li>
+                <li><strong>Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models,</strong>
+                    <br>Xudong Lu‡, Qi Liu, Yuhui Xu, Aojun Zhou, Siyuan Huang, Bo Zhang, Junchi Yan, Hongsheng Li.
+                    <br>Association for Computational Linguistics, Main Conference, ACL, 2024.
+                </li>
+                <li><strong>Efficient N: M Sparse DNN Training Using Algorithm, Architecture, and Dataflow Co-Design</strong>
+                    <br>Chao Fang, Wei Sun, Aojun Zhou, Zhongfeng Wang.
+                    <br>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2023.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>CUHK MMLab</strong> April 2023 – Present
+                    <br><strong>PhD Candidate</strong>
+                    <br>Leading a Small Group of PhD students from CUHK, Collaborating with SenseTime and vivo AI Lab, Focusing on Large Language Models for Reasoning and Efficient (Multimodal) Large Language Models.
+                </li>
+                <li><strong>SenseTime</strong> Jan. 2019 – Apr. 2022
+                    <br><strong>Research Scientist</strong>
+                    <br>Efficient Video Interpolation for Mobile Phone. Deep learning for Smarter Sensor (e.g, ToF, Sony IMX).
+                </li>
+                <li><strong>Intel Labs China</strong> Mar. 2016 – Dec. 2018
+                    <br><strong>Research Intern</strong>
+                    <br>Published 6 top-tier research papers in ICLR, CVPR, ICCV and 3 PCT/US patent applications got granted/filed, which are widely used in Intel AI related HW designs (such as Intel® Movidius™ Neural Compute Sticks and Intel® Arria® 10 SoC FPGAs) and SW applications (such as Intel® RealSense™ SDK and Intel® Distribution of OpenVINO™ Toolkit.)
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Multimodal Large Language Models for Mobile Phones @ CUHK.</strong> 2024-present
+                    <br>Co-leading the research and development of an edge-side general-purpose multimodal large language model (in collaboration with vivo), achieving general capabilities on par with the strongest state-of-the-art open source models, but with higher throughput and lower memory usage. Additionally, it demonstrates superior performance in OCR and multimodal reasoning.
+                </li>
+                <li><strong>Large Language Models for Mathematical Reasoning @ CUHK.</strong> 2023-present
+                    <br>Collaborated with SenseTime to develop a large language model for mathematical reasoning, incorporating techniques such as continued pretraining, SFT, and DPO. The model currently achieves over 70% accuracy (7B) on the representative MATH dataset and demonstrates strong generalization capabilities across a broader range of datasets.
+                </li>
+                <li><strong>Video Interpolation System (2x, 4x) @ SenseTime.</strong> 2022
+                    <br>Developed an optical flow-based video frame interpolation algorithm (2x, 4x), deployed for efficient display on mobile devices and movie frame interpolation on PC, successfully implemented by Vivo and China Film Group.
+                </li>
+                <li><strong>High-quality and High performance Depth Sensing @ Sony & SenseTime.</strong> 2019-2021
+                    <br>As a core member, developed Sony ToF’s depth denoising algorithm and Spot ToF RGBD depth completion solution, including full pipeline optimization.
+                </li>
+                <li><strong>Efficient Deep learning for Edge Devices @ Intel.</strong> 2017-2018
+                    <br>Developed quantization and sparse methods for computer vision models, then collaborate and transfer to hardware-software teams, including Intel® Arria, Intel® Movidius™, OpenVINO™ Toolkit.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Selected Awards</h2>
+            <ul class="award-list">
+                <li>Best Paper Award - IEEE Transactions on VLSI Systems (TVLSI)</li>
+                <li>Postgraduate Scholarship - The Chinese University of Hong Kong (CUHK)</li>
+                <li>Excellent Employee Recognition - SenseTime</li>
+                <li>Outstanding Intern Award - Intel</li>
+                <li>Travel Award - International Conference on Learning Representations (ICLR 2017)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Teaching Experience</h2>
+            <ul>
+                <li>ELEG5760: Machine Learning for Multimedia Applications, TA, Fall 2024.</li>
+                <li>ELEG 5491: Pattern Recognition, TA, Fall 2023.</li>
+                <li>ELEG 5491: Introduction to Deep Learning, TA, Spring 2023.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Mentorship</h2>
+            <ul>
+                <li>Zimu Lu (BS@USTC CS, PhD@CUHK, HKPF awardee)</li>
+                <li>Xudong Lu (BS@SJTU CS, PhD@CUHK, HKPF awardee)</li>
+                <li>Zipeng Qin (BS@UCB EECS, PhD@CUHK, HKPF awardee)</li>
+                <li>Ke Wang (BS@NJU AI, PhD@CUHK, HKPF awardee)</li>
+                <li>Han Xiao (BS@Tsinghua, PhD@CUHK)</li>
+                <li>Chao Fang (BS@TJU EE, PhD@NJU EE)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Referees</h2>
+            <div class="referee-info">
+                <p><strong>Xiaogang Wang</strong></p>
+                <p>Professor</p>
+                <p>Department of Electrical Engineering</p>
+                <p>The Chinese University of Hong Kong</p>
             </div>
-            <!-- <h3>Ph.D. Candidate</h3> -->
-            <!-- <p> supervised by <a href="https://www.ee.cuhk.edu.hk/~hsli/">Prof. Hongsheng Li</a></p> -->
-            <!-- <p><a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory (MMLab)</a> -->
-              <br>MMW310, The Chinese University of Hong Kong,
-              <br>Hong Kong, China
-              <br>
-              <br> Email:
-              <a href="mailto:aojunzhou@gmail.com"> aojunzhou@gmail.com</a>
-             <a href="mailto:aojunzhou@link.cuhk.edu.hk"> aojunzhou@link.cuhk.edu.hk</a>
-              <br>
-              <br> [<a href="https://scholar.google.com/citations?user=cC8lXi8AAAAJ">Google Scholar</a>]&nbsp;&nbsp;[<a
-                href="https://github.com/aojunzz">GitHub</a>]
-            </p>
-          </td>
-          <td>
-            <div>
-              <!-- <img width="270" src="./assets/aojun2.png" border="0"> -->
+            <div class="referee-info">
+                <p><strong>Hongsheng Li</strong></p>
+                <p>Associate Professor</p>
+                <p>Department of Electrical Engineering</p>
+                <p>The Chinese University of Hong Kong</p>
             </div>
-          </td>
-        </tr>
-        <tr></tr>
-      </tbody>
-    </table>
-    <div id="layout-content" style="margin-top: 25px;">
+            <div class="referee-info">
+                <p><strong>Zhongfeng Wang, FIEEE</strong></p>
+                <p>Professor</p>
+                <p>School of Integrated Circuits (Dean), Sun Yat-sen University</p>
+                <p>School of Electronic Science and Engineering, Nanjing University</p>
+            </div>
+            <div class="referee-info">
+                <p><strong>Anbang Yao</strong></p>
+                <p>Research Director</p>
+                <p>Intel Labs</p>
+            </div>
+        </section>
 
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, MATLAB, C/C++, Java.</li>
+                <li><strong>Libraries and Tools:</strong> PyTorch, PyTorch Lightning, Accelerate, Transformers, DeepSpeed, et al.</li>
+            </ul>
+        </section>
 
-
-
-      <h2>Biography</h2>
-      <p> I am a final-year Ph.D. candidate at MMLab, CUHK, supervised by Prof. Hongsheng Li and Prof. Xiaogang Wang. Before that, he got my M.E. degree from NLPR, Institute of Automation, Chinese Academy of Sciences.
-        <br><br>  My research interests include <i>Large Multimodal Models</i>, <i>Large Language Models</i>,
-        <!-- <i>Emboided AI</i>, and <i>3D Vision</i>. -->
-        <!-- <br><br> ✉️ I'm looking for undergraduate and graduate students for academic cooperation. Discussions are -->
-        <!-- welcomed! -->
-      </p>
-
-      <h2>News</h2>
-      <ul>
-        <li>
-          [2025-05] We release <a href="https://github.com/Euphoria16/UI-Genie">"UI-Genie"</a>, SOTA open-sourced Mobile GUI agent models.
-        </li>
-        <li>
-          [2025-05] Three papers accepted by ACL 2025.
-        </li>
-        <li>
-          [2025-05] We received the 2025 <b>best paper award</b> of IEEE Transactions on Very Large Scale Integration (VLSI) Systems.
-        </li>
-        <li>
-          [2025-03] Three papers accepted by ICLR 2025, <b>two Spotlights</b>.
-        </li>
-      </ul>
-
-
-
-      <h2>Selected Projects</h2>
-      * Equal Contribution &nbsp;&nbsp; # Corresponding Author;  + Project Lead
-
-      <!-- <br><br><b> -->
-        <!-- <font color="##36BC2">♠ o1/R1-like Chain-of-Thought (CoT) Reasoning </font> -->
-      <!-- </b> -->
-
-      <ul>
-          <li>
-          <div style="margin-top: 30px;"><b>UI-Genie: A Self-Improving Approach for Iteratively Boosting MLLM-based Mobile GUI Agents</b></div>
-          <div style="margin-top: 5px;"><a style="color: #777;">Han Xiao, Guozhi Wang, Yuxiang Chai, <u><b>Aojun Zhou#</b></u>,Hongsheng Li#</a>
-             <div style="margin-top: 5px;"><a style="color: #b70505c0;"><i>SOTA performance on mobile GUI agent</i></a></div>
-            <div style="margin-top: 5px;"><i><b>Arxiv </b></i><br></div>
-          </div>
-        </li>
-        <li>
-          <div style="margin-top: 30px;"><b>Solving challenging math word problems using gpt-4 code interpreter with code-based self-verification</b></div>
-          <div style="margin-top: 5px;"><a style="color: #777;"><u><b>Aojun Zhou</b></u>, Ke Wang, Zimu Lu, Weikang Shi,Hongsheng Li</a>
-             <div style="margin-top: 5px;"><a style="color: #b70505c0;"><i>The first to use an interleaved text and code interpreter for mathematical reasoning, MathCoder models are open-sourced version.</i></a></div>
-            <div style="margin-top: 5px;"><i><b>ICLR2024 </b></i><br></div>
-          </div>
-        </li>
-        <li>
-          <div style="margin-top: 30px;"><b>MathCoder: Seamless Code Integration in LLMs for Enhanced Mathematical Reasoning</b></div>
-          <div style="margin-top: 5px;"><a style="color: #777;">Ke Wang, Houxing Ren, <u><b>Aojun Zhou*</b></u>,Hongsheng Li</a>
-            <div style="margin-top: 5px;"><i><b>ICLR2024 </b></i><br></div>
-          </div>
-        </li>
-        <li>
-          <div style="margin-top: 30px;"><b>Learning N:M Fine-grained Structured Sparse Neural Networks From Scratch</b></div>
-          <div style="margin-top: 5px;"><a style="color: #777;"><u><b>Aojun Zhou</b></u>,Hongsheng Li</a>
-            <div style="margin-top: 5px;"><a style="color: #b70505c0;"><i>The first work on general N:M sparsity, and its hardware variant, received the IEEE TVLSI best paper award.</i></a></div>
-            <div style="margin-top: 5px;"><i><b>ICLR 2024 </b></i><br></div>
-          </div>
-        </li>
-        <li>
-          <div style="margin-top: 30px;"><b>An algorithm–hardware co-optimized framework for accelerating N: M sparse transformers</b></div>
-          <div style="margin-top: 5px;"><a style="color: #777;">Chao Fang, <u><b>Aojun Zhou</b></u>, Zhongfeng Wang</a>
-            <div style="margin-top: 5px;"><a style="color: #b70505c0;"><i>Best Paper 2025</i></a></div>
-            <div style="margin-top: 5px;"><i><b>IEEE VLSI </b></i><br></div>
-          </div>
-        </li>
-      </ul>
-
-
-      <!-- 
-<h2>Selected Awards</h2>
-<ul>
-<li> 
-  [2021-06] Outstanding Graduate, Peking University (Top <b>5%</b>)
-</li>
-<li> 
-[2020-09] Academic Excellent Scholarship (Ranked <b>1<sup>st</sup></b>/73)
-</li>
-<li> 
-[2020-09] Merit Student PaceSetter, Peking University (Ranked <b>1<sup>st</sup></b>/73)
-</li>
-<li> 
-[2019-09] Academic Excellent Scholarship (Ranked <b>4<sup>th</sup></b>/73)
-</li>
-<li> 
-[2019-09] Merit Student, Peking University (Ranked <b>4<sup>th</sup></b>/73)
-</li>
-<li> 
-[2016-07] China Youth Technology Innovation Award (The <b>Only 1</b> in Province)
-</li>
-<li> 
-[2016-10] 1<sup>st</sup> Prize in Provincial Chinese Physics Olympiad (Ranked <b>18<sup>th</sup></b> in Province)
-</li>
-<li> 
-[2015-10] 2<sup>nd</sup> Prize in The Chinese 15<sup>th</sup> Awarding Program for Future Scientist (Ranked <b>1<sup>st</sup></b> in Province)
-</li>
-<li> 
-[2013-03] 1<sup>st</sup> Prize in Provincial China Adolescent Robotics Competition (Ranked <b>1<sup>st</sup></b> in Province)
-</li>
-</ul>
-
-<h2>Hobbies</h2>
-Soccer ⚽️, Moive 🎬, Singing 🎤, Piano 🎹, Violin 🎻, Snorkeling 🤿, <a href="https://www.hottoys.com.hk/">HotToys</a> 🦸‍♂️, <a href="https://fco.qq.com/main.shtml">FC Online</a> 🎮, <a href="https://www.pubg.com/zh-cn">PUBG</a> 🐓
-<ul>
-</ul>
- -->
-
-
-
-<div style="width:200px; height:200px; display:inline-block">
-  <script 
-    type="text/javascript" 
-    id="clstr_globe" 
-    src="//clustrmaps.com/globe.js?d=1HgCpzryyWaLvTkAi6nCwIgDASm8iPUEKalKvsBBhhM">
-  </script>
-</div>
-
-
+        <section>
+            <h2>Services</h2>
+            <h3>Journal Editorship and Reviewer:</h3>
+            <ul>
+                <li>Reviewer: TPAMI, IJCV, TCSVT, TNNLS, TMLR, TVLSI, TCAD, etc.</li>
+            </ul>
+            <h3>Conference and Workshop Service:</h3>
+            <ul>
+                <li>Reviewer: NeurIPS (2020 – 2025), ICML (2021 – 2025), ICLR (2019 – 2025), CVPR (2020 – 2025), etc.</li>
+            </ul>
+        </section>
     </div>
-  </div>
-
-
-
 </body>
-
 </html>
